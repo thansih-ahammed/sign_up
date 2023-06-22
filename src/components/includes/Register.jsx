@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Swal from 'sweetalert2';
 import axios from 'axios';
 import '../../App.css'
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -38,7 +40,7 @@ export default function Register() {
       }).then(() => {
         // Do something after the user clicks "OK" in the success popup
         // For example, you can redirect the user to another page
-        window.location.href = '/thank-you-page';
+        navigate("/"); // Navigate to the signup page
       });
     } catch (error) {
       // Handle error response
