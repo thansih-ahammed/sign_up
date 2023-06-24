@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
-// import Swal from "sweetalert2";
+
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-// import { Helmet } from "react-helmet";
+
 import { UserContext } from "../../App"; // Import the UserContext
 
 export default function Login() {
@@ -43,7 +43,7 @@ export default function Login() {
   };
 
   return (
-    <section className="sm:h-screen px-4 items-center bg-gradient-to-br from-blue-500 to-green-500 flex flex-wrap justify-around">
+    <section className="h-screen px-4 items-center bg-gradient-to-br from-blue-500 to-green-500 flex flex-wrap justify-around">
       {/* Login Container */}
       <div className="w-full sm:max-w-lg p-5">
         <h2 className="text-2xl text-white font-bold mb-6">Log In</h2>

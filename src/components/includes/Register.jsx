@@ -40,7 +40,7 @@ export default function Register() {
       }).then(() => {
         // Do something after the user clicks "OK" in the success popup
         // For example, you can redirect the user to another page
-        navigate("/"); // Navigate to the signup page
+        // navigate("/"); // Navigate to the signup page
       });
     } catch (error) {
       // Handle error response
@@ -57,7 +57,7 @@ export default function Register() {
   };
 
   return (
-    <section className="  sm:h-screen px-4 items-center bg-gradient-to-br from-blue-500 to-green-500 flex flex-wrap justify-around  ">
+    <section className="  h-screen px-4 items-center bg-gradient-to-br from-blue-500 to-green-500 flex flex-wrap justify-around  ">
       {/* Container */}
       <div className="sm:max-w-xl  sm:p-[50px] p-5 bg-transparent sm:shadow-2xl">
         {/* LeftContainer */}

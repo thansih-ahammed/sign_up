@@ -15,7 +15,7 @@ import PreLoader from "./components/includes/PreLoader/PreLoader";
 
 export const UserContext = createContext();
 
-function App() {
+export default function App() {
   const [userData, setUserData] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -37,6 +37,9 @@ function App() {
     setUserData(JSON.parse(localStorage.getItem("user_data")));
     setLoading(false);
   }, []);
+
+
+
   return loading ? (
     <PreLoader />
   ) : (
@@ -62,5 +65,3 @@ function App() {
 
   );
 }
-
-export default App;
